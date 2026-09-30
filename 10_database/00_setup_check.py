@@ -201,7 +201,7 @@ def step5_privileges():
     conn.close()
 
     if n !=1:
-        raise ValueError("UPSERT 후 결과가 {n} 행 입니다. 결과가 1개여야합니다.")
+        raise ValueError(f"UPSERT 후 결과가 {n} 행 입니다. 결과가 1개여야합니다.")
 
 results=[]
 def check(name,fn):
